@@ -3,6 +3,10 @@ package Atv2;
 public abstract class Funcionario {
     protected String nome;
 
+    public Funcionario(String nome) {
+        this.nome = nome;
+    }
+
     public abstract Double calcularSalario();
     public void exibirDados(){
         System.out.println("nome:"+nome);
